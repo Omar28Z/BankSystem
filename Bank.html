@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+    <link rel="stylesheet" href="Bank.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank System</h1>
+        <h2>Your Bank Information</h2>
+        <form id="bankForm">
+            <h3>Personal Information</h3>
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" required>
+            <label for="age">Your Age:</label>
+            <input id="age" type="number" required>
+            <label for="balance">Your Balance:</label>
+            <input id="balance" type="number" required>
+            <h3>Your Address</h3>
+            <label for="city">Your City:</label>
+            <input id="city" type="text" required>
+            <label for="street">Your Street:</label>
+            <input id="street" type="text" required>
+            <label for="building_number">Your Building Number:</label>
+            <input id="building_number" type="text" required>
+            <label for="apartment_number">Your Apartment Number:</label>
+            <input id="apartment_number" type="text" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <div id="accountActions">
+            <h3>Account Actions</h3>
+            <label for="depositAmount">Deposit Amount:</label>
+            <input id="depositAmount" type="number">
+            <button id="depositButton">Deposit</button><br>
+            <label for="withdrawAmount">Withdraw Amount:</label>
+            <input id="withdrawAmount" type="number">
+            <button id="withdrawButton">Withdraw</button>
+        </div>
+        <div id="accountInfo">
+            <h3>Account Information</h3>
+            <p id="infoName">Name: </p>
+            <p id="infoBalance">Balance: </p>
+            <p id="infoAddress">Address: </p>
+        </div>
+    </div>
+    <script src="Bank.js"></script>
+</body>
+</html>
